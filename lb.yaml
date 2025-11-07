@@ -1,0 +1,18 @@
+apiVersion: vmoperator.vmware.com/v1alpha4
+kind: VirtualMachineService
+metadata:
+  name: vmapptier1-service
+  namespace: apptier2-blm
+spec:
+  selector:
+    app: vmapptier2
+  type: LoadBalancer
+  ports:
+  - name: ssh
+    port: 22
+    protocol: TCP
+    targetPort: 22
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 80
