@@ -6,5 +6,5 @@ metadata:
   namespace: apptier2-blm
 spec:
   subnetDHCPConfig: {mode: "DHCPServer"}
-  accessMode: Private
+  accessMode: Public
   ipv4SubnetSize: 32
