@@ -20,7 +20,7 @@ spec:
         network:
           apiVersion: crd.nsx.vmware.com/v1alpha1
           kind: Subnet
-          name: vmvmservice-subnet
+          name: vmapptier2-blm-subnet
 
 ---
 
