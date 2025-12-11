@@ -46,6 +46,7 @@ stringData:
                 shell: /bin/bash
             packages:
               - git
+              - python3
               - net-tools
               - npm
               - traceroute
@@ -53,7 +54,7 @@ stringData:
             runcmd:
               - date > /etc/birth_certificate
               - git clone https://github.com/benfairclough/code-simplewebsite.git
-              - cp /SimpleWebsite/index.html /var/www/html/
+              - cp /code-simpleWebsite/index.html /var/www/html/
               - sed -i -e 's/nginx!/nginx!BOX3/g' /var/www/html/index.nginx-debian.html  
             salt_minion:
               conf:
