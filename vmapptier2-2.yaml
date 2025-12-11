@@ -60,8 +60,8 @@ stringData:
             #    file_client: local
             #    fileserver_backend: [gitfs]
             #    gitfs_remotes: ['https://github.com/_user_/_repo_.git']
-                master: salt.example.com
-            #  config_dir: /etc/salt
+                master: 192.168.20.30
+              config_dir: /etc/salt
             #  grains:
             #    role: [web]
             #  pkg_name: salt-minion
